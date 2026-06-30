@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD92gv9BrhdBSwkU-Kw1hOvTCCU4VuJEoM",
-  authDomain: "smart-hr-f5091.firebaseapp.com",
-  projectId: "smart-hr-f5091",
-  storageBucket: "smart-hr-f5091.firebasestorage.app",
-  messagingSenderId: "197885040151",
-  appId: "1:197885040151:web:920b870b6382ff693cae52"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 export const app = initializeApp(firebaseConfig);
